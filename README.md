@@ -1,14 +1,15 @@
 # Screen worms
-To use: 
+To use (UI works only on Linux): 
 
 ```
 git clone https://github.com/flail1123/Screen_Worms.git
 cd Screen_Worms
-make
-make clean
 ```
 now to set up server:
 ```
+cd server_and_client
+make
+make clean
 ./screen-worms-server [-p n] [-s n] [-t n] [-v n] [-w n] [-h n]
 ```
 where:
@@ -21,6 +22,9 @@ where:
 
 and to set up client:
 ```
+cd server_and_client
+make
+make clean
  ./screen-worms-client game_server [-n player_name] [-p n] [-i gui_server] [-r n]
 ```
 
@@ -30,6 +34,15 @@ and to set up client:
   * `-i gui_server` – address (IPv4 lub IPv6) or name of the UI server (default localhost)
   * `-r n` – UI server's port (default 20210)
 
+and to set up UI:
+```
+cd UI
+make
+make clean
+ ./gui2 [port]
+```
+
+  * `port` – UI server's port (default 20210)
 
 Description:
 TODO
