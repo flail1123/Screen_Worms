@@ -1,5 +1,5 @@
 # Screen worms
-To use (UI works only on Linux): 
+How to run (UI works only on Linux): 
 
 ```
 git clone https://github.com/flail1123/Screen_Worms.git
